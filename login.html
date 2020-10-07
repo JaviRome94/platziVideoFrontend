@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300&display=swap" rel="stylesheet">
+    <title>Login</title>
+  
+<style>
+     
+     body{
+    margin: 0px;
+    font-family: 'Muli', sans-serif;
+    color: white;
+    /* background: #7209b7; */
+    background: linear-gradient(#b100e8, #8900f2);
+    /* height: 500pt; */
+}
+
+
+     .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+    margin-top: 30px;
+}
+
+.login__contenedor {
+    background-color: rgba(255, 255,255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 60px 68px 40px;
+    min-height: 500px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login__contenedor--form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.login__contenedor--form label {
+  font-size: 14px;
+}
+
+.login__contenedor--recuerdame{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login__contenedor--recuerdame a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;  
+
+}
+
+.login__contenedor--recuerdame a:hover{
+    text-decoration: underline;   
+}
+
+.login__contenedor--social-media div {
+    display: flex;
+    align-items: center;
+    font-size: 14px; 
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.login__contenedor--social-media img {
+   width: 30px;
+   margin-right: 10px;
+
+}
+
+.login__contenedor--registro {
+    font-size: 14px; 
+}
+
+.login__contenedor--registro a {
+    font-size: 16px; 
+    font-weight: bold;
+    color: white;
+    margin-left: 8px;
+    text-decoration: none;
+}
+
+.login__contenedor--registro a:hover {
+  text-decoration: underline;
+}
+
+.input {
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+
+.input::placeholder {
+    color: white;
+}
+
+.button {
+    background: rgba(255, 255,255, 0.1);
+    border:none;
+    border-radius: 25px;
+    color:white;
+    cursor:pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+.footer {
+    display: flex;
+    align-items:center;
+    height:100px;
+    width:100%;
+}
+
+.footer a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Muli', sans-serif;
+  padding-left: 30px;
+
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:600px){
+    .login__contenedor{
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+        height: 410pt;
+    }
+    
+    .footer {
+        align-items:flex-start;
+        flex-direction: column;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+    <section class="login">
+        <section class="login__contenedor">
+            <h2 tabindex="0">Inicio de sesión</h2>
+            <form class="login__contenedor--form">
+                <input aria-label="correo" class="input" type="text" placeholder="Correo">
+                <input aria-label="Contraseña" class="input" type="password" placeholder="Contraseña">
+                <button class="button"> iniciar sesión </button>
+                <div class="login__contenedor--recuerdame">
+                    <label>
+                        <input type="checkbox" id="cbox1" value="checkbos" > Recuerdame
+                    </label>
+                    <a href="/">Olvidé mi Contraseña</a>
+                </div>
+                
+            </form>
+                    <section class="login__contenedor--social-media">
+                        <div><img src="../platziVideo/google-icon.png" alt="Google"> Inicia sesión con Google</div>
+                        <div><img src="../platziVideo/twitter-icon.png" alt="Twitter"> Inicia sesión con Twitter</div>
+                  </section>
+                 <p class="login__contenedor--registro">No tienes ninguna cuenta<a href="/">Registrate</a></p>
+              </section>
+        </section>
+        <footer class="footer">
+            <a href="/">Términos de uso</a>
+            <a href="/">Declaracion de privacidad</a>
+            <a href="/">Centro de Ayuda</a>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300&display=swap" rel="stylesheet">
+    <title>Registro</title>
+
+<style>
+    body {
+    margin: 0px;
+    font-family: 'Muli', sans-serif;
+    color: white;
+    /* background: #7209b7; */
+    background: linear-gradient(#b100e8, #8900f2);
+    /* height: 500pt; */
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+    margin-top: 30px;
+}
+
+.login__contenedor {
+    background-color: rgba(255, 255,255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 60px 68px 40px;
+    min-height: 500px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login__contenedor--form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.login__contenedor--form label {
+  font-size: 14px;
+}
+
+.input {
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+
+.input::placeholder {
+    color: white;
+}
+
+.button {
+    background: rgba(255, 255,255, 0.1);
+    border:none;
+    border-radius: 25px;
+    color:white;
+    cursor:pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+.footer {
+    display: flex;
+    align-items:center;
+    height:100px;
+    width:100%;
+}
+
+.footer a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: 'Muli', sans-serif;
+  padding-left: 30px;
+
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.login__contenedor--registro {
+   display: flex;
+   justify-content: center;
+   color: white;
+   text-decoration: none;
+
+}
+
+.login__contenedor--registro:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:600px){
+    .login__contenedor{
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
+    
+    .footer {
+        align-items:flex-start;
+        flex-direction: column;
+    }
+}
+
+
+</style>
+
+</head>
+
+<body>
+    <section class="login">
+        <section class="login__contenedor">
+            <h2>Regístrate</h2>
+            <form class="login__contenedor--form">
+                <input class="input" type="text" placeholder="Nombre">
+                <input class="input" type="text" placeholder="Correo">
+                <input class="input" type="password" placeholder="Contraseña">
+                <button class="button"> Registrarme </button>            
+            </form>
+               <a class="login__contenedor--registro" href="/">Iniciar Sesión</a>
+        </section>
+    </section>
+        <footer class="footer">
+            <a href="/">Términos de uso</a>
+            <a href="/">Declaracion de privacidad</a>
+            <a href="/">Centro de Ayuda</a>
+        </footer>
+</body>
+</html>

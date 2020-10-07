@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+body {
+    margin: 0px;
+}
+
+.carrusel {
+ width: 100%;
+ overflow: scroll;
+ padding: 30px;
+ position: relative;
+
+}
+.carrusel__contenedor {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;  
+
+}
+
+.carrusel-item {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    background-color:green;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+
+}
+  .carrusel__contenedor:hover .carrusel-item {
+      transform: translate3d(100px 0,0);
+  }
+
+  .carrusel__contenedor:hover .carrusel-item {
+    opacity: 0.3;
+  }
+  
+  .carrusel__contenedor:hover .carrusel-item:hover {
+      transform: scale(1.5);
+      opacity: 1;
+  }
+
+  .carrusel-item__img {
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+  }
+
+  .carrusel-item__detalles {
+      background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+      font-size: 10px;
+      opacity: 1;
+      transition: 450ms opacity;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      color: white;
+      font-family: 'Muli', sans-serif;
+    
+}
+
+.carrusel-item__detalles img {
+    width: 20px;
+    height: 20px;
+}
+
+</style>
+
+<body>
+    <section class="carrusel">
+        <div class="carrusel__contenedor">
+         <div class="carrusel-item">
+             <img class="carrusel-item__img" src="https://images.pexels.com/photos/3268257/pexels-photo-3268257.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="esto es una imagen">
+               <div class="carrusel-item__detalles">
+                <div>
+                    <img src="../platziVideo/play.png" alt="play"/>
+                    <img src="../platziVideo/plus.png" alt="plus">
+                 </div> 
+                 <p class="carrusel-item__detalles--titulo"> Titulo descriptivo </p>
+                 <p class="carrusel-item__detalles--subtitulo"> 2020 16+ 115 minutos</p>
+               </div>
+         </div>
+
+         <div class="carrusel-item">
+            <img class="carrusel-item__img" src="https://images.pexels.com/photos/3214972/pexels-photo-3214972.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="esto es una imagen">
+              <div class="carrusel-item__detalles">
+               <div>
+                   <img src="../platziVideo/play.png" alt="play"/>
+                   <img src="../platziVideo/plus.png" alt="plus">
+                </div> 
+                <p class="carrusel-item__detalles--titulo"> Titulo descriptivo </p>
+                <p class="carrusel-item__detalles--subtitulo"> 2020 16+ 115 minutos</p>
+              </div>
+        </div>
+
+        <div class="carrusel-item">
+            <img class="carrusel-item__img" src="https://images.pexels.com/photos/2902960/pexels-photo-2902960.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="esto es una imagen">
+              <div class="carrusel-item__detalles">
+               <div>
+                   <img src="../platziVideo/play.png" alt="play"/>
+                   <img src="../platziVideo/plus.png" alt="plus">
+                </div> 
+                <p class="carrusel-item__detalles--titulo"> Titulo descriptivo </p>
+                <p class="carrusel-item__detalles--subtitulo"> 2020 16+ 115 minutos</p>
+              </div>
+        </div>
+
+       </div>
+    </section>
+</body>
+</html>
